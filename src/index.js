@@ -2,12 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import { ChakraProvider, theme } from '@chakra-ui/react'
+import AuthContextProvider from './context/AuthContext'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <AuthContextProvider>
     <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>
-  </React.StrictMode>,
+  </AuthContextProvider>,
   document.getElementById('root')
 )
