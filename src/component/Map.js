@@ -58,7 +58,7 @@ import {
     // console.log(`outside ${locale[0].lat}`)
   
     const { isLoaded } = useJsApiLoader({
-      googleMapsApiKey: "AIzaSyDkWD_g64Z3ts5St_9E6tjIrME-F5VbYhg",
+      googleMapsApiKey: process.env.REACT_APP_MAP_API_KEY,
       libraries: ['places'],
     })
   
